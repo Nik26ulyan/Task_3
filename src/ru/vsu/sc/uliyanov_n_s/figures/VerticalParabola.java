@@ -1,0 +1,18 @@
+package ru.vsu.sc.uliyanov_n_s.figures;
+
+public class VerticalParabola {
+    public double x0;
+    public double y0;
+    public double a;
+
+    public VerticalParabola(double x0, double y0, double a) {
+        this.x0 = x0;
+        this.y0 = y0;
+        this.a = a;
+    }
+
+    public boolean isPointBelowOfParabola(double x, double y) {
+        return y < a * Math.pow((x + y0), 2) + x0;
+    }
+}
+
