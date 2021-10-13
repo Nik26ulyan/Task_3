@@ -11,7 +11,9 @@ public class Main {
         double x = readCoordinates("X");
         double y = readCoordinates("Y");
 
-        SimpleColor color = Picture.getColor(x, y);
+        Picture picture = new Picture();
+        SimpleColor color = picture.getColor(x, y);
+
         printColor(x, y, color);
 
     }

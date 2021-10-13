@@ -6,11 +6,11 @@ import ru.vsu.sc.uliyanov_n_s.figures.VerticalParabola;
 
 public class Picture {
 
-    public static final Line L = new Line(0, -1, -1);
-    public static final VerticalParabola P = new VerticalParabola(-2, -3, -1);
-    public static final Circle C = new Circle(-2, 2, 3);
+    public final Line L = new Line(0, -1, -1);
+    public final VerticalParabola P = new VerticalParabola(-2, -3, -1);
+    public final Circle C = new Circle(-2, 2, 3);
 
-    public static SimpleColor getColor(double x, double y) {
+    public SimpleColor getColor(double x, double y) {
         SimpleColor color;
 
         if (P.isPointBelowOfParabola(x, y) && C.isPointInCircle(x, y)) {
