@@ -1,7 +1,7 @@
 package ru.vsu.sc.uliyanov_n_s;
 
 public class Test {
-    public static boolean testCorrectness = checkCorrectnessOfGetColor();
+    public static boolean testingCorrectness = checkCorrectnessOfGetColor();
 
     static boolean checkCorrectnessOfGetColor() {
         Picture picture = new Picture();

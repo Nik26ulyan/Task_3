@@ -17,9 +17,11 @@ public class Main {
         printColor(x, y, color);
 
     }
-
-    static void printColor(double x, double y, SimpleColor color) {
-        System.out.printf("(%s, %s) -> %s", x, y, color);
+    static void checkCorrectnessOfProgram() {
+        if (!Test.testingCorrectness) {
+            System.out.println("Testing is failed!");
+            System.exit(0);
+        }
     }
 
     static void printFirstPhrase() {
@@ -46,10 +48,7 @@ public class Main {
         return cord;
     }
 
-    static void checkCorrectnessOfProgram() {
-        if (!Test.testCorrectness) {
-            System.out.println("Testing is failed!");
-            System.exit(0);
-        }
+    static void printColor(double x, double y, SimpleColor color) {
+        System.out.printf("(%s, %s) -> %s", x, y, color);
     }
 }
