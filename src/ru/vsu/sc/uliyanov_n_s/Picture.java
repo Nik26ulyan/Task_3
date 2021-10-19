@@ -6,9 +6,15 @@ import ru.vsu.sc.uliyanov_n_s.figures.VerticalParabola;
 
 public class Picture {
 
-    public final Line L = new Line(0, -1, -1);
-    public final VerticalParabola P = new VerticalParabola(-2, -3, -1);
-    public final Circle C = new Circle(-2, 2, 3);
+    private final Line L;
+    private final VerticalParabola P;
+    private final Circle C;
+
+    public Picture(Line l, VerticalParabola p, Circle c) {
+        L = l;
+        P = p;
+        C = c;
+    }
 
     public SimpleColor getColor(double x, double y) {
         SimpleColor color;
