@@ -11,7 +11,7 @@ public class Main {
     private static final VerticalParabola P = new VerticalParabola(-2, -3, -1);
     private static final Circle C = new Circle(-2, 2, 3);
 
-    public static Picture picture = new Picture(L, P, C);
+    public static final Picture picture = new Picture(L, P, C);
 
     public static void main(String[] args) {
         if (Test.testingCorrectness) {
