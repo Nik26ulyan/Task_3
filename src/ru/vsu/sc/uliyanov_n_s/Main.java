@@ -14,7 +14,7 @@ public class Main {
     public static final Picture picture = new Picture(L, P, C);
 
     public static void main(String[] args) {
-        if (Test.testingCorrectness) {
+        if (Test.checkCorrectnessOfGetColor()) {
             printFirstPhrase();
 
             double x = readCoordinates("X");

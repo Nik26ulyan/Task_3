@@ -1,7 +1,6 @@
 package ru.vsu.sc.uliyanov_n_s;
 
 public class Test {
-    public static boolean testingCorrectness = checkCorrectnessOfGetColor();
 
     static boolean checkCorrectnessOfGetColor() {
         if (Main.picture.getColor(0, 3) == SimpleColor.ORANGE) {
